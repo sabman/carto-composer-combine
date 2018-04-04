@@ -1,0 +1,3 @@
+Offical Documenation: https://github.com/CartoDB/CartoDB-SQL-API/blob/master/doc/API.md
+
+`docker.js`: This file gets copied to the host and adapted for each environment by `run.sh` script. This needs to be kept in sync with updates [here](https://github.com/CartoDB/CartoDB-SQL-API/tree/master/config/environments). Currently updated [docker.js]( https://github.com/CartoDB/CartoDB-SQL-API/commits/master/config/environments/production.js.example) to [8c2e5f74dfb7b496545628884a1503745af03672](https://github.com/CartoDB/CartoDB-SQL-API/commit/8c2e5f74dfb7b496545628884a1503745af03672#diff-02aa00c61394f8260e3b3768769dba95)
