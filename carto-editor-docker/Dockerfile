@@ -74,8 +74,8 @@ RUN git config --global user.name "sabman docker"
 # ogr2ogr2 static build, see https://github.com/CartoDB/cartodb/wiki/How-to-build-gdal-and-ogr2ogr2
 RUN cd /opt && git clone https://github.com/OSGeo/gdal ogr2ogr2 && cd ogr2ogr2 && \
   git remote add cartodb https://github.com/cartodb/gdal && git fetch cartodb && \
-  git checkout trunk && git pull origin trunk && \
-  git checkout upstream && git merge -s ours --ff-only origin/trunk && \
+  git checkout master && git pull origin master && \
+  git checkout upstream && git merge -s ours --ff-only origin/master && \
   git checkout ogr2ogr2 && git merge -s ours upstream -m "Merged it" && \
   cd ogr2ogr2 && ./configure --disable-shared && make -j 4 && \
   cp apps/ogr2ogr /usr/bin/ogr2ogr && ln -s /usr/bin/ogr2ogr /usr/bin/ogr2ogr2 && rm -rf /opt/ogr2ogr2 /root/.gitconfig
