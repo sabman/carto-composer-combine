@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:trusty-20190425
 MAINTAINER Shoaib <shoaib@geografa.com.au>
 
 ENV CARTO_ENV development
